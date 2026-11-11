@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -15,7 +15,9 @@
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a href="index.html" class="brand">WunderKinder</a>
+        <a href="index.html" class="brand" aria-label="WunderKinder Startseite">
+          <img src="assets/logo.svg" alt="WunderKinder" class="brand-logo" />
+        </a>
         <nav class="main-nav" aria-label="Hauptnavigation">
           <a href="index.html#ueber-uns">Über uns</a>
           <a href="index.html#ziele">Ziele</a>
@@ -23,13 +25,14 @@
           <a href="index.html#helfen">Helfen</a>
           <a href="index.html#kontakt">Kontakt</a>
         </nav>
+        <a class="header-cta" href="index.html#helfen">Dabei sein <span aria-hidden="true">↗</span></a>
       </div>
     </header>
 
     <main class="page-shell">
-      <article class="panel">
+      <article class="legal-document">
         <p class="eyebrow text-accent">Datenschutz</p>
-        <h1>Datenschutzerklärung</h1>
+        <h1>Datenschutz&shy;erklärung</h1>
 
         <p>
           Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. Diese Webseite ist bewusst
@@ -71,8 +74,18 @@
           bei Bedarf die Datenschutzbestimmungen des jeweiligen Hostings.
         </p>
 
-        <p><a href="index.html">Zurück zur Startseite</a></p>
+        <p class="legal-back"><a href="index.html">Zurück zur Startseite</a></p>
       </article>
     </main>
+
+    <footer class="site-footer legal-footer">
+      <div class="container footer-bottom">
+        <p>© 2026 WunderKinder e.V.</p>
+        <div class="legal-links">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

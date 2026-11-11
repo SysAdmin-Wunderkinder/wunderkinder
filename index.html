@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -19,7 +19,9 @@
   <body>
     <header class="site-header">
       <div class="container nav-wrap">
-        <a href="index.html" class="brand" aria-label="WunderKinder Startseite">WunderKinder</a>
+        <a href="index.html" class="brand" aria-label="WunderKinder Startseite">
+          <img src="assets/logo.svg" alt="WunderKinder" class="brand-logo" />
+        </a>
 
         <nav class="main-nav" aria-label="Hauptnavigation">
           <a href="#ueber-uns">Über uns</a>
@@ -28,6 +30,7 @@
           <a href="#helfen">Helfen</a>
           <a href="#kontakt">Kontakt</a>
         </nav>
+        <a class="header-cta" href="#helfen">Dabei sein <span aria-hidden="true">↗</span></a>
       </div>
     </header>
 
@@ -35,52 +38,42 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">WunderKinder e.V.</p>
-            <h1>Jedes Kind verdient Sicherheit, Würde und Zukunft.</h1>
+            <p class="eyebrow">WunderKinder e.V. <span class="eyebrow-line"></span> Berlin</p>
+            <h1>Kindheit darf sich <em>sicher</em> anfühlen.</h1>
             <p class="lead">
-              Wir unterstützen Kinder in schwierigen Lebenssituationen mit praktischer Hilfe,
-              emotionaler Begleitung und gezielter Förderung.
+              Wir geben Kindern und Familien Halt, wenn das Leben aus dem Gleichgewicht gerät.
+              Mit Nähe, Zeit und Hilfe, die im Alltag ankommt.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#helfen">Mitmachen</a>
-              <a class="button button-secondary" href="#kontakt">Kontakt aufnehmen</a>
+              <a class="button button-primary" href="#helfen">Unterstützen <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#ueber-uns">Mehr über uns <span aria-hidden="true">↓</span></a>
             </div>
           </div>
 
-          <div class="hero-card" aria-label="Information über die Vereinsarbeit">
-            <div class="stat">
-              <strong>350+</strong>
-              <span>unterstützte Kinder</span>
-            </div>
-            <div class="stat">
-              <strong>24</strong>
-              <span>aktive Partner &amp; Helfer</span>
-            </div>
-            <div class="stat">
-              <strong>12</strong>
-              <span>Projekte im Jahr</span>
-            </div>
+          <div class="hero-visual" aria-label="WunderKinder Logo">
+            <img src="assets/logo.svg" alt="WunderKinder Logo" class="hero-logo" />
+            <div class="visual-note"><span>01</span> Gemeinsam wachsen</div>
           </div>
         </div>
+        <div class="hero-ribbon"><span>Für kleine Menschen mit großen Gefühlen</span><span aria-hidden="true">✳</span><span>Seit 2014 in Berlin</span></div>
       </section>
 
       <section id="ueber-uns" class="section">
         <div class="container two-column">
           <div>
-            <p class="eyebrow text-accent">Wer wir sind</p>
-            <h2>Wir setzen uns für Kinder ein, die Hilfe brauchen.</h2>
+            <p class="eyebrow text-accent">01 / Wer wir sind</p>
+            <h2>Ein sicherer Ort beginnt mit einem offenen Ohr.</h2>
           </div>
           <div>
             <p>
-              WunderKinder e.V. ist ein gemeinnütziger Verein, der Kinder in schwierigen
-              Lebenslagen begleitet. Wir glauben, dass jedes Kind die Chance auf eine
-              sichere und würdige Zukunft verdient – egal, welche Herausforderungen es
-              gerade erlebt.
+              WunderKinder e.V. begleitet Kinder und Familien in schwierigen Lebenslagen.
+              Wir glauben an die Kraft von Beziehungen, an kleine Schritte und daran, dass
+              jedes Kind gesehen werden möchte.
             </p>
             <p>
-              Unsere Arbeit verbindet praktische Unterstützung mit menschlicher Nähe.
-              Gemeinsam mit Ehrenamtlichen, Förderern und Partnern schaffen wir Räume,
-              in denen Kinder gestärkt, gehört und motiviert werden.
+              Deshalb schaffen wir Räume für Vertrauen, bieten konkrete Hilfe und bleiben
+              an der Seite, wenn es kompliziert wird. Unaufgeregt, verlässlich und mit viel
+              Freude an dem, was möglich wird.
             </p>
           </div>
         </div>
@@ -88,31 +81,39 @@
 
       <section id="ziele" class="section alt-section">
         <div class="container">
-          <p class="eyebrow text-accent">Unsere Ziele</p>
-          <h2>Hilfe, die wirklich ankommt.</h2>
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow text-accent">02 / Was uns trägt</p>
+              <h2>Werte, die man spürt.</h2>
+            </div>
+            <p class="section-intro">Nicht jedes Problem lässt sich sofort lösen. Aber niemand muss es allein tragen.</p>
+          </div>
 
           <div class="card-grid">
             <article class="info-card">
-              <h3>Soziale Unterstützung</h3>
+              <span class="card-index">A</span>
+              <h3>Nähe &amp; Vertrauen</h3>
               <p>
-                Wir helfen Kindern und ihren Familien in Krisensituationen mit konkreter,
-                respektvoller und individueller Begleitung.
+                Wir nehmen uns Zeit, hören zu und schaffen Beziehungen, die auch schwierige
+                Tage aushalten.
               </p>
             </article>
 
             <article class="info-card">
-              <h3>Bildung &amp; Entwicklung</h3>
+              <span class="card-index">B</span>
+              <h3>Mut &amp; Möglichkeiten</h3>
               <p>
-                Durch Projekte, Lernangebote und Begegnungen fördern wir Selbstvertrauen,
-                Motivation und Zukunftsperspektiven.
+                Kinder entdecken eigene Stärken und bekommen Raum, Neues auszuprobieren und
+                über sich hinauszuwachsen.
               </p>
             </article>
 
             <article class="info-card">
-              <h3>Gemeinsam stark</h3>
+              <span class="card-index">C</span>
+              <h3>Gemeinschaft &amp; Halt</h3>
               <p>
-                Wir schaffen eine starke Gemeinschaft aus Menschen, die Kinder nicht allein
-                lassen und aktiv Verantwortung übernehmen.
+                Ehrenamtliche, Familien und Partner bilden ein Netz, das trägt und gemeinsam
+                Verantwortung übernimmt.
               </p>
             </article>
           </div>
@@ -121,14 +122,14 @@
 
       <section id="aktivitaeten" class="section">
         <div class="container">
-          <p class="eyebrow text-accent">Aktivitäten</p>
-          <h2>Unsere Angebote</h2>
+          <p class="eyebrow text-accent">03 / Was wir tun</p>
+          <h2>Konkrete Hilfe. Im echten Leben.</h2>
 
           <div class="activities">
             <div class="activity-item">
               <span class="activity-number">01</span>
               <div>
-                <h3>Nachhilfe &amp; Lernförderung</h3>
+                <h3>Lernräume</h3>
                 <p>Individuelle Unterstützung beim Lernen und im schulischen Alltag.</p>
               </div>
             </div>
@@ -136,15 +137,15 @@
             <div class="activity-item">
               <span class="activity-number">02</span>
               <div>
-                <h3>Soziale Projekte</h3>
-                <p>Aktivitäten, die Kinder stärken, einbinden und motivieren.</p>
+                <h3>Freie Zeit</h3>
+                <p>Gemeinsame Erlebnisse, kreative Projekte und Zeit, die einfach gut tut.</p>
               </div>
             </div>
 
             <div class="activity-item">
               <span class="activity-number">03</span>
               <div>
-                <h3>Familienbegleitung</h3>
+                <h3>Familien im Blick</h3>
                 <p>Praktische Hilfe und gezielte Unterstützung in schwierigen Lebensphasen.</p>
               </div>
             </div>
@@ -155,22 +156,21 @@
       <section id="helfen" class="section highlight-section">
         <div class="container help-grid">
           <div>
-            <p class="eyebrow text-accent">Mitmachen</p>
-            <h2>Sie können Kinder in Not unterstützen.</h2>
+            <p class="eyebrow text-accent">04 / Mitmachen</p>
+            <h2>Hilfe wird größer, wenn wir sie teilen.</h2>
             <p>
-              Jede Form von Unterstützung zählt: als Spenderin, ehrenamtliche Helferin,
-              Partnerin oder Ansprechpartnerin. Gemeinsam machen wir Wirklichkeit aus
-              kleinen und großen Hilfen.
+              Jede Form von Unterstützung zählt. Werden Sie Teil eines Netzwerks, das Kindern
+              Aufmerksamkeit, Chancen und ein Stück Leichtigkeit schenkt.
             </p>
           </div>
 
           <div class="help-box">
-            <h3>So können Sie helfen</h3>
+            <h3>Vier Wege, etwas zu bewegen</h3>
             <ul>
-              <li>Spenden für Projekte und direkte Hilfe</li>
-              <li>Als Ehrenamtliche mitwirken</li>
-              <li>Partner werden und Projekte fördern</li>
-              <li>Uns auf sozialen Medien begleiten</li>
+              <li><span>01</span> Spenden und direkte Hilfe ermöglichen</li>
+              <li><span>02</span> Zeit als Ehrenamtliche schenken</li>
+              <li><span>03</span> Projekte als Partner stärken</li>
+              <li><span>04</span> Unsere Arbeit weitertragen</li>
             </ul>
           </div>
         </div>
